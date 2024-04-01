@@ -13,6 +13,25 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        Escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <38 39>;
+        };
+
+        EscapeHR {
+            bindings = <&kp ESCAPE>;
+            key-positions = <14 15 16>;
+        };
+
+        Layer3 {
+            bindings = <&mo 3>;
+            key-positions = <37 40>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
